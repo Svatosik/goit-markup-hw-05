@@ -347,6 +347,9 @@ body {
   opacity: 0;
   pointer-events: none;
 }
+.overlay.is-hidden .modal-window {
+  transform: translate(-50%, -50%) scale(1.2);
+}
 .modal-window {
   position: absolute;
   top: 50%;
@@ -357,8 +360,8 @@ body {
   min-width: 408px;
   min-height: 576px;
   background: var(--modal-background);
-  box-shadow: 0px 1px 1px rgb(0 0 0 / 14%), 0px 1px 3px rgb(0 0 0 / 12%),
-    0px 2px 1px rgb(0 0 0 / 20%);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 .modal-close {
