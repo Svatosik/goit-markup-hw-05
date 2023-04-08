@@ -50,7 +50,7 @@
             <li class="header-item">
               <a
                 href="./index.html"
-                class="header-link link"
+                class="header-link link visited"
                 >Studio</a
               >
             </li>
@@ -98,12 +98,21 @@
           <button
             type="button"
             class="hero-btn"
+            data-modal-open
           >
             Order Service
           </button>
         </div>
       </section>
-
+      <div class="overlay is-hidden" data-modal>
+        <div class="modal-window">
+          <button class="modal-close" data-modal-close>
+            <svg class="icon-close">
+                  <use href="./images/icons.svg#icon-cross"></use>
+                </svg>
+          </button>
+        </div>
+      </div>
       <section class="advantage section">
         <div class="container">
           <h2
@@ -536,5 +545,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
